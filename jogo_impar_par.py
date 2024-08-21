@@ -8,7 +8,7 @@ def styleprint(txt): # Função para printar estilizadamente o "txt"
     print(f'|  {txt}  |')
     print('-'* (len(txt) + 6))
 
-def limpar_terminal(): 
+def limpar_terminal(): # Função para limpar o terminal 
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def jogar_com_maquina(): # Função para jogar com a máquina:
