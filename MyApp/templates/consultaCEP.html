@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Endereços</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Endereços</h1>
+    <form action="GET">
+        {{ form.as_p }}
+        <button type="submit">Buscar</button>
+    </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>CEP</th>
+                    <th>Logradouro</th>
+                    <th>Bairro</th>
+                    <th>Localidade</th>
+                    <th>UF</th>
+                </tr>
+            </thead>
+    
+        <tbody>
+            {% if endereco %}
+            <tr>
+                <td>{{ endereco.cep }}</td>
+                <td>{{ endereco.logradouro }}</td>
+                <td>{{ endereco.bairro }}</td>
+                <td>{{ endereco.localidade }}</td>
+                <td>{{ endereco.uf }}</td>
+            </tr>
+            {% elif endereco is not none %}
+            <tr>
+                <td colspan="5">Nenhum endereço encontrado.</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    </table>
+</body>
+</html>
