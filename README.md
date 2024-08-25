@@ -23,25 +23,8 @@ Este projeto foi desenvolvido usando **Django** e **Django Rest Framework**, com
 
 ## Estrutura do Projeto
 
-├── manage.py
-├── myproject/
-│   ├── settings.py
-│   ├── urls.py
-│   ├── wsgi.py
-│   └── ...
-├── app/
-│   ├── models.py
-│   ├── views.py
-│   ├── urls.py
-│   ├── forms.py
-│   ├── templates/
-│   │   ├── registration/
-│   │   │   ├── login.html
-│   │   │   ├── register.html
-│   │   ├── informar_telefone.html
-│   │   ├── dados_telefone.html
-│   └── ...
-└── ...
+├── manage.py ├── myproject/ │ ├── settings.py │ ├── urls.py │ ├── wsgi.py │ └── ... ├── app/ │ ├── models.py │ ├── views.py │ ├── urls.py │ ├── forms.py │ ├── templates/ │ │ ├── registration/ │ │ │ ├── login.html │ │ │ ├── register.html │ │ ├── informar_telefone.html │ │ ├── dados_telefone.html │ └── ... └── ...
+
 
 
 ## Instalação
