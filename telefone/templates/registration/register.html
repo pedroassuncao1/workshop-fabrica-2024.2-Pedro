@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'telefone/styles_registro.css' %}">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registro</h2>
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="{{ form.username.id_for_label }}">Nome de usuário:</label>
+                {{ form.username }}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.password1.id_for_label }}">Senha:</label>
+                {{ form.password1 }}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.password2.id_for_label }}">Confirmar Senha:</label>
+                {{ form.password2 }}
+            </div>
+            <button type="submit">Registrar</button>
+        </form>
+        <p>Já tem uma conta? <a href="{% url 'login' %}">Faça login aqui</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dados do Telefone</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'telefone/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Dados do Telefone</h1>
+        <p><strong>Número Internacional:</strong> {{ data.international_format }}</p>
+        <p><strong>Localização:</strong> {{ data.location }}</p>
+        <p><strong>Operadora:</strong> {{ data.carrier }}</p>
+        <p><strong>Tipo de Linha:</strong> {{ data.line_type }}</p>
+        <p><strong>Nome do País:</strong> {{ data.country_name }}</p>
+        <a href="{% url 'informar_telefone' %}" style="display: inline-block; padding: 10px; font-size: 16px; text-decoration: none; color: #007bff;">Voltar</a>
+    </div>
+</body>
+</html>

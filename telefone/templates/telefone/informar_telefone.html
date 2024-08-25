@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Informar Telefone</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'telefone/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Informar Telefone</h1>
+        <form method="post">
+            {% csrf_token %}
+            <label for="numero">Número de Telefone:</label>
+            <input type="text" id="numero" name="numero" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
