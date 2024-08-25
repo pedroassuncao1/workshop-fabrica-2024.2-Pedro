@@ -27,43 +27,46 @@ Este projeto foi desenvolvido usando **Django** e **Django Rest Framework**, com
 
 1. **Clone o repositório:**
 
-   ```bash
+   ```bash```
    git clone https://github.com/usuario/repo.git
    cd repo
 
 2 **Crie um ambiente virtual e ative-o:**
-   ```bash```
+   ```bash ```
     python -m venv venv
     source venv/bin/activate  # Linux/Mac
     .\venv\Scripts\activate  # Windows
 
-3 Instale as dependências:
+3 **Instale as dependências:**
+    ```bash``` 
     pip install -r requirements.txt
 
-4 Realize as migrações do banco de dados:
+4 **Realize as migrações do banco de dados:**
+    ```bash```
     python manage.py migrate
 
-5 Inicie o servidor:
+5 **Inicie o servidor:**
+    ```bash```
     python manage.py runserver
 
-Acesse o projeto:
+## Acesse o projeto:
 
 Abra o navegador e acesse [http://localhost:8000](http://localhost:8000).
 
-- Uso
+## Uso
 
-Registro:
+### Registro:
 
 - Acesse a página de registro para criar uma conta. O sistema não permite senhas fracas.
 - Insira um nome de usuário, senha e confirme a senha.
 - Após o registro, faça login no sistema.
 
-Login:
+### Login:
 
 - Acesse a página de login.
 - Insira suas credenciais para acessar a funcionalidade de validação de números de telefone.
 
-Validação de Números de Telefone:
+### Validação de Números de Telefone:
 
 - Após o login, você será redirecionado para a página onde poderá inserir um número de telefone.
 - Submeta o número para verificar sua validade.
