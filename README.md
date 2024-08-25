@@ -32,7 +32,7 @@ Este projeto foi desenvolvido usando **Django** e **Django Rest Framework**, com
    cd repo
 
 2 **Crie um ambiente virtual e ative-o:**
-   ```bash 
+   ```bash```
     python -m venv venv
     source venv/bin/activate  # Linux/Mac
     .\venv\Scripts\activate  # Windows
