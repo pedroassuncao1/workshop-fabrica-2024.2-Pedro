@@ -23,36 +23,6 @@ Este projeto foi desenvolvido usando **Django** e **Django Rest Framework**, com
 
 
 
-## Instalação
-
-1. **Clone o repositório:**
-
-   ```bash```
-     git clone https://github.com/usuario/repo.git
-     cd repo
-
-2 **Crie um ambiente virtual e ative-o:**
-   ```bash```
-    python -m venv venv
-    source venv/bin/activate  # Linux/Max
-    .\venv\Scripts\activate  # Windows
-    
-3 **Instale as dependências:**
-    ```bash 
-    pip install -r requirements.txt```
-
-4 **Realize as migrações do banco de dados:**
-    ```bash
-    python manage.py migrate```
-
-5 **Inicie o servidor:**
-    ```bash
-    python manage.py runserver```
-
-## Acesse o projeto:
-
-Abra o navegador e acesse [http://localhost:8000](http://localhost:8000).
-
 ## Uso
 
 ### Registro:
