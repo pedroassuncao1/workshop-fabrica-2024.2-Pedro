@@ -21,10 +21,6 @@ Este projeto foi desenvolvido usando **Django** e **Django Rest Framework**, com
 - **HTML/CSS:** Usado para criar e estilizar as páginas de login, registro e resultados.
 - **SQLite:** Banco de dados utilizado para armazenar informações de usuários e registros de validações de números de telefone.
 
-## Estrutura do Projeto
-
-├── manage.py ├── myproject/ │ ├── settings.py │ ├── urls.py │ ├── wsgi.py │ └── ... ├── app/ │ ├── models.py │ ├── views.py │ ├── urls.py │ ├── forms.py │ ├── templates/ │ │ ├── registration/ │ │ │ ├── login.html │ │ │ ├── register.html │ │ ├── informar_telefone.html │ │ ├── dados_telefone.html │ └── ... └── ...
-
 
 
 ## Instalação
@@ -41,36 +37,33 @@ Este projeto foi desenvolvido usando **Django** e **Django Rest Framework**, com
     source venv/bin/activate  # Linux/Mac
     .\venv\Scripts\activate  # Windows
 
-3 **Instale as dependências:**
-    ```bash 
+3 Instale as dependências:
     pip install -r requirements.txt
 
-4 **Realize as migrações do banco de dados:**
-    ```bash
+4 Realize as migrações do banco de dados:
     python manage.py migrate
 
-5 **Inicie o servidor:**
-    ```bash
+5 Inicie o servidor:
     python manage.py runserver
 
-## Acesse o projeto:
+Acesse o projeto:
 
 Abra o navegador e acesse [http://localhost:8000](http://localhost:8000).
 
-## Uso
+- Uso
 
-### Registro:
+Registro:
 
 - Acesse a página de registro para criar uma conta. O sistema não permite senhas fracas.
 - Insira um nome de usuário, senha e confirme a senha.
 - Após o registro, faça login no sistema.
 
-### Login:
+Login:
 
 - Acesse a página de login.
 - Insira suas credenciais para acessar a funcionalidade de validação de números de telefone.
 
-### Validação de Números de Telefone:
+Validação de Números de Telefone:
 
 - Após o login, você será redirecionado para a página onde poderá inserir um número de telefone.
 - Submeta o número para verificar sua validade.
